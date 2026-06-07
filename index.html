@@ -155,7 +155,7 @@
 
         <footer>
             <nav>
-                <span id="conspirators-wrapper"><a href="conspirators.html" id="conspirators-link">conspirators</a> • </span><a href="mailto:neil.shroff@gmail.com">contact us</a> • <a href="https://x.com/neilshroff" id="twitter-link">twitter</a> • <a href="#" id="bangerlore-link">bangerlore</a> • <a href="#">fund</a>
+                <a href="mailto:neil.shroff@gmail.com">contact us</a> • <a href="https://x.com/neilshroff" id="twitter-link">twitter</a> • <a href="#" id="bangerlore-link">bangerlore</a> • <a href="#">fund</a>
             </nav>
         </footer>
     </main>
@@ -165,7 +165,7 @@
             var bangerloreBtn = document.getElementById('bangerlore-mode');
             var title = document.getElementById('site-title');
             var bangerLink = document.getElementById('bangerlore-link');
-            var conspiratorsWrapper = document.getElementById('conspirators-wrapper');
+
             var twitterLink = document.getElementById('twitter-link');
             var gridImgs = document.querySelectorAll('#photo-grid img');
             var isDark = false;
@@ -197,7 +197,7 @@
                     title.textContent = 'Bangerlore 🍻';
                     document.title = 'Bangerlore';
                     if (bangerLink) bangerLink.textContent = 'basedcon';
-                    if (conspiratorsWrapper) conspiratorsWrapper.style.display = 'none';
+
                     if (twitterLink) twitterLink.href = 'https://x.com/search?q=bangerlore%20min_faves%3A15%20until%3A2026-01-01%20since%3A2024-05-01&src=typed_query&f=live';
                 } else {
                     document.body.classList.remove('dark');
@@ -206,7 +206,7 @@
                     title.textContent = 'Basedcon 🇮🇳';
                     document.title = 'Basedcon';
                     if (bangerLink) bangerLink.textContent = 'bangerlore';
-                    if (conspiratorsWrapper) conspiratorsWrapper.style.display = '';
+
                     if (twitterLink) twitterLink.href = 'https://x.com/neilshroff';
                 }
                 // Only rewrite URL on localhost / non-production domains
